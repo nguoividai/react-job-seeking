@@ -1,0 +1,42 @@
+/* login */
+.form-item-input .forgot-password {
+    color: #F00202;
+    font-size: 16px;
+    text-align: right;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.signup {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25.2px;
+    font-family: barlow;
+}
+
+.title-description h3 {
+    margin-bottom: 0
+}
+
+.title-description p {
+    margin-top: 0.5rem;
+}
+
+/* homepage */
+
+@media screen and (max-width: 992px) {
+    .home-product .container  {
+        max-width: 500px;
+        justify-content: center;
+    }
+    
+    .home-v1hub-works .container  {
+        max-width: 500px;
+    }
+
+    .companies, .members  {
+        padding: 4rem
+    }
+
+}

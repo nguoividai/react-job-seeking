@@ -1,0 +1,44 @@
+.section .title {
+    text-align: center;
+    padding: 5rem 0 1rem 0;
+    margin: 0;
+}
+.section .title.title-left {
+    text-align: left;
+}
+
+.section .extra {
+    text-align: center;
+    color: var(--app-color-text-5);
+    margin-top: -1rem;
+}
+.section .extra.extra-left {
+    text-align: left;
+}
+
+.section .section-content {
+    font-weight: 400;
+    /* font-size: 0.75rem; */
+    font-size: 18px;
+    line-height: 140%;
+}
+
+@media screen and (min-width: 768px) {
+    .section .title {
+        padding: 5rem 0 1rem 0;
+    }
+
+    .section .section-content {
+        padding: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section .title {
+        padding: 2rem 0.5rem 1rem 0rem;
+    }
+
+    .section .section-content {
+        padding: 3.5rem 0rem;
+    }
+}

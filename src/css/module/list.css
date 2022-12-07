@@ -1,0 +1,117 @@
+
+.list-title {
+    font-weight: 600;
+    color: var(--app-color-bg-1);
+    margin: 0;
+    padding-bottom: 0.25rem;
+    font-size: 16px;
+}
+
+ul.list {
+    list-style: none;
+    margin: 0;
+}
+
+ul.list-vertical {
+    padding: 0;
+}
+
+ul.list-vertical .list-item {
+    padding: 0.45rem 0;
+}
+
+
+ul.list.list-horizontal {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+ul.list.list-item {
+    line-height: 140%;
+}
+
+.app-footer ul.list-vertical .list-item {
+    color: var(--app-color-link);
+}
+
+/* LIST DESCRIPTION */
+.list .list-item.list-description:first-child {
+    margin-top: 0;
+}
+
+.list .list-item.list-description {
+    padding: 1rem;
+    border-radius: 1px;
+    margin: 0.75rem 0;
+    border-radius: 5px;
+}
+
+.list-description.active {
+    background: #4E4E4E;
+}
+
+.list-description--title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 29px;
+    padding-bottom: 0.5rem;
+}
+
+.list-description--information {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #CCCCCC;
+}
+
+/* LIST INFORMATION */
+.list-information .list-information--title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 29px;
+    color: var(--app-color-text-1);
+    border: 0 !important;
+}
+
+.list-information .list-group-item {
+    border: 1px solid #E1E4E9;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    font-family: 'barlow';
+    gap: 1rem;
+}
+
+.list-information .list-group-item .list-item--label {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 140%;
+    color: var(--app-color-text-5);
+    width: 30%;
+    font-family: 'barlow';
+}
+
+.list-information .list-group-item .list-item--content {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 140%;
+    color: var(--app-color-text-1);
+    width: 60%;
+    font-family: 'barlow';
+}
+
+.list-information .list-group-item .list-item--action {
+    width: 10%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 140%;
+    text-align: right;
+    color: #005888;
+    font-family: 'barlow';
+}
+
+.list-information .list-group-item a {
+    text-decoration: none;
+    font-weight: 700;
+}

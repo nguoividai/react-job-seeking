@@ -1,0 +1,71 @@
+.collapseCard{
+  margin-top: 16px;
+}
+.collapsible-header {
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgb(49, 47, 48);
+  border-left: 1px solid rgb(49, 47, 48);
+  border-right: 1px solid rgb(49, 47, 48);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(49, 47, 48);
+
+  text-align: left;
+  border-bottom: 0px;
+  padding: 18px;
+  width: 100%;
+}
+
+.collapsible {
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(49, 47, 48);
+  border-left: 1px solid rgb(49, 47, 48);
+  border-right: 1px solid rgb(49, 47, 48);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-family: Barlow;
+  padding: 16px;
+}
+
+.collapsible p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgb(100, 100, 100);
+}
+
+.collapsible span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgb(0, 0, 0);
+  margin-left: 16px;
+}
+
+
+.collapsible-header:after {
+  content: '^';
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 14px;
+  margin-left: 5px;
+  transform: scale(1.8,0.9);
+}
+
+.collapsible-header.active:after {
+  content: '^';
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 14px;
+  margin-left: 5px;
+  transform: scale(1.8,0.9) rotate(180deg);
+}

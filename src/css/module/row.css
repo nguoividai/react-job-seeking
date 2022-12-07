@@ -1,0 +1,4 @@
+.row-slide {
+  flex-wrap: nowrap !important;
+  overflow-x: scroll;
+}

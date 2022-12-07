@@ -1,0 +1,295 @@
+@import url("./bootstrap/bootstrap-grid.min.css");
+@import url("./icon/icofont/icofont.min.css");
+
+@import url("./module/layout.css");
+@import url("./module/header.css");
+@import url("./module/button.css");
+@import url("./module/list.css");
+@import url("./module/footer.css");
+@import url("./module/social.css");
+@import url("./module/sideNav.css");
+@import url("./module/form.css");
+@import url("./module/banner.css");
+@import url("./module/card.css");
+@import url("./module/row.css");
+@import url("./module/section.css");
+@import url("./module/collapse.css");
+@import url("./module/table.css");
+
+@import url("./pages/pages.css");
+@import url("./pages/cartPage.css");
+@import url("./pages/getInstantQuote.css");
+
+@font-face {
+  font-family: 'barlow';
+  src: url('./font-face/Barlow/Barlow-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'barlow-bold';
+  src: url('./font-face/Barlow/Barlow-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'barlow-semi';
+  src: url('./font-face/Barlow/Barlow-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'barlow-medium';
+  src: url('./font-face/Barlow/Barlow-Medium.ttf');
+}
+
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+:root {
+  --app-color-primary-dark: #312F30;
+  --app-color-primary-blue: #005888;
+  --app-color-primary-white: #fff;
+  --app-color-text-1: #000000;
+  --app-color-text-2: #222222;
+  --app-color-text-3: #4E4E4E4E;
+  --app-color-text-4: #646464;
+  --app-color-text-5: #6B6B6B;
+  --app-color-bg-1: #EBEBEB;
+  --app-color-bg-2: #F5F5F5F5;
+  --app-color-bg-3: #4E4E4E;
+  --app-color-bg-4: #646464;
+  --app-color-bg-5: #6B6B6B;
+  --app-color-link: #CECECECE;
+}
+
+html,
+body {
+  font-family: barlow !important;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 16px;
+  color: #312F30;
+  font-family: barlow;
+
+}
+
+h1 {
+  font-size: 48px;
+  font-family: barlow-bold;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: barlow-bold, barlow-semi !important;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: barlow-semi !important;
+  font-weight: 600;
+  color: #000;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: barlow, barlow-bold !important;
+}
+
+body {
+  font-family: barlow !important;
+  font-size: 18px;
+}
+
+body:has(.backdrop),
+html:has(.backdrop), 
+html:has(.offcanvas-backdrop) {
+  overflow: hidden;
+}
+
+small {
+  font-size: 16px;
+}
+
+caption {
+  font-size: 12px;
+}
+
+button {
+  font-family: barlow;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+a {
+  color: var(--app-color-primary-blue);
+  font-family: barlow;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  ;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+a:hover {
+  font-weight: 800;
+}
+
+/* CUSTOM LIBRARY REACT_SLICK */
+.slick-slider .slick-arrow::after,
+.slick-slider .slick-arrow::before {
+  color: var(--app-color-text-2);
+}
+
+.slick-initialized .slick-slide {
+  padding: 1.5rem
+}
+
+/* CUSTOM COMPONENT  */
+.list-item a{
+  color: var(--app-color-link) !important;
+}
+.choose-product table {
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  background: white;
+}
+
+.table-extra {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgb(150, 150, 150);
+}
+
+.action button {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text-light-bold {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgb(100, 100, 100);
+}
+
+.post-content {
+  padding: 62px 0 0 0;
+}
+
+.post-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+
+
+  /* Grey */
+
+  color: #6B6B6B;
+}
+
+.post-content .media {
+  margin-bottom: 62px;
+}
+
+.media article {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  /* Light Grey */
+
+  color: #969696;
+}
+
+.post-content h1 {
+  text-align: center;
+}
+
+.BaseIntroduce .intro {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #312F30;
+  margin-bottom: 48;
+}
+
+.BaseIntroduce h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+
+  /* Black */
+
+  color: #312F30;
+}
+
+.BaseIntroduce p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+
+
+  /* Grey */
+
+  color: #6B6B6B;
+
+}
+.BaseIntroduce .section{
+  padding-top: 48px;
+}
+
+/* CUSTOM NAVLINK */
+.link-unactive {
+  color: white !important;
+}
+
+.zIGoD {
+  width: 100%;
+  cursor: pointer;
+}
+
+.app-container {
+  padding: 2rem;
+}
+
+.offcanvas .offcanvas-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: var(--app-color-text-1);
+}
+.post-container{
+  padding: 0 12rem;
+}
