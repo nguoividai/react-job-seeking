@@ -295,7 +295,7 @@ a:hover {
 }
 
 .prompt-form-container {
-  max-width: 500px;
+  max-width: 750px !important;
   display: flex;
   justify-content: center;
   

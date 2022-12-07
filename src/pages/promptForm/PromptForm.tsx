@@ -14,19 +14,19 @@ const PromptForm = () => {
             stepKey={1}
             stepTitle="How do rate your overall satisfaction about the service provided?"
           >
-            1
+            <Form />
           </Steps.Item>
           <Steps.Item stepKey={1} stepTitle="How did you hear about our company?">
-            1
+            <Form />
           </Steps.Item>
           <Steps.Item
             stepKey={1}
             stepTitle="Do you think to suggest our company to a friend or parent?"
           >
-            1
+            <Form />
           </Steps.Item>
           <Steps.Item stepKey={1} stepTitle="Summary">
-            1
+            <Form />
           </Steps.Item>
         </Steps>
       </div>

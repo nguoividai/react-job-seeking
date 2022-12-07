@@ -44,8 +44,6 @@ function FormExample() {
             <Form.Control.Feedback type="invalid">Please choose a username.</Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
-      </Row>
-      <Row>
         <Form.Group as={Col} md="12" controlId="validationCustom03">
           <Form.Label>City</Form.Label>
           <Form.Control type="text" placeholder="City" required />
@@ -64,6 +62,7 @@ function FormExample() {
           <Form.Control.Feedback type="invalid">Please provide a valid zip.</Form.Control.Feedback>
         </Form.Group>
       </Row>
+
       <Form.Group className="mb-3">
         <Form.Check
           required
