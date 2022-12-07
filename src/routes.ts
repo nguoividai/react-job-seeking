@@ -1,13 +1,13 @@
 import React from 'react';
 
-const MainLayout = React.lazy(() => import('./layout/MainLayout'));
+const PromptForm = React.lazy(() => import('src/pages/promptForm/PromptForm'));
 
 const routes = [
   {
     path: '/',
     exact: true,
     name: 'Dashboard',
-    element: MainLayout,
+    element: PromptForm,
   },
 ];
 

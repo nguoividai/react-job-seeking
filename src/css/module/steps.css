@@ -1,0 +1,22 @@
+ul.job-seeking-steps {
+    display: none;
+}
+
+.tab-content .step-number {
+    color: var(--app-color-text-4);
+    margin-bottom: 5px;
+}
+
+.tab-content .step-title {
+    margin: 0 0 20px 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 1.125rem;
+}
+
+.tab-content .step-action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}

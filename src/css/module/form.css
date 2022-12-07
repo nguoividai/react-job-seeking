@@ -65,4 +65,7 @@ form .form-label {
     font-size: 1rem;
     line-height: 19px;
     color: #969696;
+    margin: 1rem 0;
 }
+
+form .form-check {margin: 1rem 0;}

@@ -1,4 +1,3 @@
-@import url("./bootstrap/bootstrap-grid.min.css");
 @import url("./icon/icofont/icofont.min.css");
 
 @import url("./module/layout.css");
@@ -15,6 +14,7 @@
 @import url("./module/section.css");
 @import url("./module/collapse.css");
 @import url("./module/table.css");
+@import url("./module/steps.css");
 
 @import url("./pages/pages.css");
 @import url("./pages/cartPage.css");
@@ -293,3 +293,18 @@ a:hover {
 .post-container{
   padding: 0 12rem;
 }
+
+.prompt-form-container {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  
+}  
+
+@media screen and (min-width: 1200px) {
+  .prompt-form-container {
+    margin-top: 2rem; 
+    margin-bottom: 2rem; 
+  }  
+}
+
