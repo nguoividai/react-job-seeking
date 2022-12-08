@@ -36,8 +36,14 @@ const StepItem: React.FC<StepItemProps> = ({
           </Button>
         )}
         {stepKey < (totalStep || 0) - 1 && (
-          <Button onClick={increase}>
+          <Button variant="seeking-primary" onClick={increase}>
             Next <i className="icofont-thin-double-right"></i>
+          </Button>
+        )}
+        {totalStep !== undefined && stepKey === totalStep - 1 && (
+          <Button variant="seeking-primary">
+            <i style={{ marginRight: 8 }} className="icofont-verification-check"></i>
+            Submit
           </Button>
         )}
       </div>

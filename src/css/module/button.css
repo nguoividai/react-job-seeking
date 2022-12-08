@@ -33,6 +33,10 @@ button.button.primary {
     background: #005888;
 }
 
+button.button.primary {
+    background: #005888;
+}
+
 button.button.white {
     background: #fff;
     color: #005888;
@@ -96,4 +100,16 @@ button.button-option{
     border: 0;
     text-align: center;
     background: transparent;
+}
+
+/* CUSTOM BOOTSTRAP */
+
+button.btn.btn-seeking-primary {
+    background: #005888;
+    color: #fff;
+}
+
+button.btn.btn-main-action {
+    background: #2557a7;
+    color: #fff;
 }

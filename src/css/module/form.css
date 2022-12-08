@@ -69,3 +69,9 @@ form .form-label {
 }
 
 form .form-check {margin: 1rem 0;}
+
+div:has(input[required])  label.form-label::after {
+    content: "*";
+    color: red;
+    margin-left:  0.25rem;
+}

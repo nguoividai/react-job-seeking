@@ -1,6 +1,12 @@
 import React from 'react';
 import Steps from 'src/components/steps/Steps';
+import ConfirmForm from './ConfirmForm';
 import Form from './Form';
+import LanguageForm from './LanguageForm';
+import SalaryDesiredForm from './SalaryDesiredForm';
+import ShortDescriptionForm from './ShortDescriptionForm';
+import SkillForm from './SkillForm';
+import TypeWork from './TypeWork';
 
 const PromptForm = () => {
   return (
@@ -10,23 +16,26 @@ const PromptForm = () => {
           <Steps.Item stepKey={0} stepTitle="Please fill with your details">
             <Form />
           </Steps.Item>
-          <Steps.Item
-            stepKey={1}
-            stepTitle="How do rate your overall satisfaction about the service provided?"
-          >
-            <Form />
+          <Steps.Item stepKey={1} stepTitle="What is your languages?">
+            <LanguageForm />
           </Steps.Item>
-          <Steps.Item stepKey={1} stepTitle="How did you hear about our company?">
-            <Form />
+          <Steps.Item stepKey={2} stepTitle="What is your skills?">
+            <SkillForm />
           </Steps.Item>
           <Steps.Item
-            stepKey={1}
-            stepTitle="Do you think to suggest our company to a friend or parent?"
+            stepKey={3}
+            stepTitle="Do you want to be part-time / full-time / temporary / contract work?"
           >
-            <Form />
+            <TypeWork />
           </Steps.Item>
-          <Steps.Item stepKey={1} stepTitle="Summary">
-            <Form />
+          <Steps.Item stepKey={4} stepTitle="What is the desired salary?">
+            <SalaryDesiredForm />
+          </Steps.Item>
+          <Steps.Item stepKey={5} stepTitle="Short description">
+            <ShortDescriptionForm />
+          </Steps.Item>
+          <Steps.Item stepKey={6} stepTitle="Confirm">
+            <ConfirmForm />
           </Steps.Item>
         </Steps>
       </div>

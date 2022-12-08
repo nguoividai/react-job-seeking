@@ -2,6 +2,10 @@ ul.job-seeking-steps {
     display: none;
 }
 
+.tab-content {
+    width: 100%;
+}
+
 .tab-content .step-number {
     color: var(--app-color-text-4);
     margin-bottom: 5px;
