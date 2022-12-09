@@ -93,3 +93,8 @@ div:has(input[required])  label.form-label::after {
     background-color: transparent;
     border: 0;
 }
+
+.form-check-input:checked {
+    background-color: var(--app-color-primary-blue) !important;
+    border-color:  var(--app-color-primary-blue) !important;
+}

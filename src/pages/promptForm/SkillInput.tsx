@@ -8,7 +8,7 @@ const SkillInput = () => {
 
   return (
     <Row>
-      <Col xs="10">
+      <Col xs="8" sm="9" md="10">
         <Typeahead
           id="skill-input"
           labelKey="name"
@@ -19,7 +19,7 @@ const SkillInput = () => {
           placeholder="Enter your skill"
         />
       </Col>
-      <Col xs="2" className="d-flex justify-content-end">
+      <Col xs="4" sm="3" md="2" className="d-flex justify-content-end">
         <Button variant="main-action">Add skill</Button>
       </Col>
     </Row>

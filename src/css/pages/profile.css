@@ -1,0 +1,113 @@
+@media screen and (max-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .profile-tabs .flex-column.nav {
+        min-height: calc(100vh - 125px);
+    }
+}
+
+.profile-tabs .flex-column.nav {
+    height: 100%;
+    background-color: #f3f2f1;
+}
+
+.profile-tabs .flex-column.nav .nav-title {
+    color: rgb(45, 45, 45);
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 1.25;
+    letter-spacing: -0.0625rem;
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+}
+
+.profile-tabs .flex-column.nav .nav-link {
+    text-align: left;
+    padding: 0;
+}
+
+
+.profile-tabs .flex-column.nav .nav-link.active .profile-item{
+    border-left: 5px solid var(--app-color-primary-blue);
+}
+
+.profile-tabs .profile-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.profile-tabs .profile-item:hover {
+    background-color:var(--app-color-bg-1);
+}
+
+
+.profile-tabs .profile-item .profile-item--icon {
+    color: var(--app-color-text-2);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.profile-tabs .profile-item .profile-item--content {
+    width: 80%;
+}
+
+.profile-tabs .profile-item .profile-item--title {
+    color: var(--app-color-text-2);
+    font-size: 1.125rem;
+    letter-spacing: -.06px;
+    font-weight: 700;
+    line-height: 1.34;
+}
+
+.profile-tabs .profile-item .profile-item--description {
+    font-size: .875rem;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 1.43;
+    color: var(--app-color-text-4);
+}
+
+.profile-item--direction {
+    color: var(--app-color-text-2);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.profile-tabs .tab-content .card-title {
+    margin: 0px 0px 1.5rem;
+    color: var(--app-color-text-2);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.25;
+}
+
+.profile-tabs .list-group .list-group-item {
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+.profile-tabs .list-group .list-group-item strong {
+   display: block;
+}
+
+/* GROUP ITEM  */
+.group-item {
+    display: flex;
+    align-items: center;
+}
+
+.group-item .group-item--info {
+    width: 80%;
+}
+
+.group-item .group-item--action {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}

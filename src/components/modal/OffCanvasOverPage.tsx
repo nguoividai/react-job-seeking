@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Modal, Offcanvas, OffcanvasProps } from 'react-bootstrap';
+import { useLocation } from 'react-router-dom';
 
 type OffCanvasOverPageProps = {
   trigger?: React.ReactNode;
@@ -19,6 +20,7 @@ const OffCanvasOverPage: React.FC<OffCanvasOverPageProps> = ({
   ...offcanvasProps
 }) => {
   const [show, setShow] = useState<boolean>(visible || false);
+  const location = useLocation();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -26,6 +28,10 @@ const OffCanvasOverPage: React.FC<OffCanvasOverPageProps> = ({
   useEffect(() => {
     setShow(visible || false);
   }, [visible]);
+
+  useEffect(() => {
+    setShow(false);
+  }, [location.pathname]);
 
   return (
     <>

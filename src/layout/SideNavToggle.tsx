@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { useLocation } from 'react-router-dom';
 import AppNavLink from './AppNavLink';
 
 const SideNavToggle = () => {
   const [show, setShow] = useState<boolean>(false);
+  const location = useLocation();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  useEffect(() => {
+    setShow(false);
+  }, [location.pathname]);
 
   return (
     <>

@@ -25,6 +25,11 @@ const AppNavLink: React.FC<AppNavLinkProps> = ({ layout }) => {
             About us
           </Nav.Link>
         </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="#/profile" href="#/profile">
+            Profile
+          </Nav.Link>
+        </Nav.Item>
       </Nav>
     </>
   );

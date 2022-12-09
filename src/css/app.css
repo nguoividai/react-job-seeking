@@ -18,8 +18,7 @@
 @import url("./module/modal.css");
 
 @import url("./pages/pages.css");
-@import url("./pages/cartPage.css");
-@import url("./pages/getInstantQuote.css");
+@import url("./pages/profile.css");
 
 @font-face {
   font-family: 'barlow';
@@ -296,17 +295,25 @@ a:hover {
   padding: 0 12rem;
 }
 
-.prompt-form-container {
+.prompt-form-container, .job-seeking-container {
   max-width: 750px !important;
   display: flex;
   justify-content: center;
 }  
 
+.job-seeking-container div {
+  width: 100%;
+}
+
 
 @media screen and (min-width: 1200px) {
-  .prompt-form-container {
+  .prompt-form-container, .job-seeking-container {
     margin-top: 2rem; 
     margin-bottom: 2rem; 
   }  
+}
+  
+.float-right {
+  float:right
 }
 
