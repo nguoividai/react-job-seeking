@@ -127,16 +127,20 @@
     font-weight: 700;
 }
 
-.app-header .app-nav-link .list-item a.active {
+.app-header .app-nav-link .nav-link.active, .app-side-nav .nav-item a.active  {
     font-weight: 700;
-    color: #fff !important;
+    color: var(--app-color-primary-blue) !important;
 }
 
 .app-side-nav .nav-item a {
     display: block;
     text-align: left;
     font-size: 1.25rem;
+    color: var(--app-color-primary-dark);
 }
+
+
+
 
 @media screen and (max-width: 576px) {
     .app-header {

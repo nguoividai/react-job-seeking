@@ -4,7 +4,7 @@ import { ListGroup } from 'react-bootstrap';
 const ConfirmForm = () => {
   return (
     <>
-      <div>
+      <div className="helper-step">
         <p>
           Sau khi confirm thành công, thì hệ thống sẽ mặc định tạo một cái account dựa vào email và
           số điện thoại

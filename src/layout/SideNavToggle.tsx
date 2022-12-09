@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import AppNavLink from './AppNavLink';
 
 const SideNavToggle = () => {
   const [show, setShow] = useState<boolean>(false);
@@ -22,14 +23,7 @@ const SideNavToggle = () => {
       <Offcanvas className="app-side-nav" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Body>
-          <Nav activeKey="/home" className="flex-column text-left">
-            <Nav.Item>
-              <Nav.Link href="/home">Find jobs</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="link-1">Company reviews</Nav.Link>
-            </Nav.Item>
-          </Nav>
+          <AppNavLink layout="vertical" />
         </Offcanvas.Body>
       </Offcanvas>
     </>

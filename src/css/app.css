@@ -15,6 +15,7 @@
 @import url("./module/collapse.css");
 @import url("./module/table.css");
 @import url("./module/steps.css");
+@import url("./module/modal.css");
 
 @import url("./pages/pages.css");
 @import url("./pages/cartPage.css");
@@ -117,7 +118,8 @@ body {
 
 body:has(.backdrop),
 html:has(.backdrop), 
-html:has(.offcanvas-backdrop) {
+html:has(.offcanvas-backdrop),
+html:has(.modal-backdrop) {
   overflow: hidden;
 }
 

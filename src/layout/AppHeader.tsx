@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
+import ModalOverPage from 'src/components/modal/ModalOverPage';
+import LoginForm from 'src/pages/login/LoginForm';
+import AppNavLink from './AppNavLink';
 import SideNavToggle from './SideNavToggle';
 
 const AppHeader = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="app-header">
       <div className="side-nav-icon">
@@ -14,19 +22,28 @@ const AppHeader = () => {
         </a>
       </div>
       <div className="app-nav-link">
-        <Nav activeKey="/home">
-          <Nav.Item>
-            <Nav.Link href="/home">Find jobs</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="link-1">Company reviews</Nav.Link>
-          </Nav.Item>
-        </Nav>
+        <AppNavLink />
       </div>
       <div className="action">
         <Nav activeKey="/home">
           <Nav.Item>
-            <Nav.Link href="/home">Sign in</Nav.Link>
+            <ModalOverPage
+              show={show}
+              title="Login"
+              onHide={handleClose}
+              trigger={
+                <Nav.Link
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleShow();
+                  }}
+                >
+                  Sign in
+                </Nav.Link>
+              }
+            >
+              <LoginForm handleClose={handleClose} />
+            </ModalOverPage>
           </Nav.Item>
         </Nav>
       </div>
