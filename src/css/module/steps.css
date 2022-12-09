@@ -24,3 +24,7 @@ ul.job-seeking-steps {
     justify-content: flex-end;
     gap: 1rem;
 }
+
+.helper-step {
+    color: var(--app-color-text-5);
+}

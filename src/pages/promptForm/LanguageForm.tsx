@@ -15,6 +15,9 @@ const LanguageForm = () => {
   ];
   return (
     <>
+      <div className="helper-step">
+        <p>Cho người dùng chọn ngôn ngữ họ có thể giao tiếp, có thể chọn nhiều</p>
+      </div>
       <div className="mt-3 mb-3">
         <Select options={options} isMulti />
       </div>

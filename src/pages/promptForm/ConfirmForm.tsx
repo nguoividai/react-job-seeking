@@ -4,6 +4,13 @@ import { ListGroup } from 'react-bootstrap';
 const ConfirmForm = () => {
   return (
     <>
+      <div>
+        <p>
+          Sau khi confirm thành công, thì hệ thống sẽ mặc định tạo một cái account dựa vào email và
+          số điện thoại
+        </p>
+        <p>Tự động chuyển tới trang thông tin cá nhân và Gởi mail thông báo đến người dùng</p>
+      </div>
       <div className="mb-3 mt-3">
         <ListGroup variant="flush">
           <ListGroup.Item>
