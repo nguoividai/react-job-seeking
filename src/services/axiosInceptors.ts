@@ -7,7 +7,7 @@ const v1hubParse: Authentication = v1hub ? JSON.parse(v1hub) : undefined;
 const tokenString = v1hubParse ? v1hubParse?.tokenString : undefined;
 
 const config: AxiosRequestConfig = {
-  baseURL: REACT_APP_HOST + '/api/v1',
+  baseURL: REACT_APP_HOST + '/api/',
   headers: {
     'Content-Type': 'application/json',
     Authorization: tokenString ? `Bearer ${tokenString}` : undefined,

@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import toast, { Toaster } from 'react-hot-toast';
+import 'react-datepicker/dist/react-datepicker.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(

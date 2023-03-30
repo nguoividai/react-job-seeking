@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Tab, Tabs } from 'react-bootstrap';
+import { Button, ButtonProps, Tab, Tabs } from 'react-bootstrap';
 
 type StepItemProps = {
   increase?: () => void;
@@ -8,19 +8,26 @@ type StepItemProps = {
   totalStep?: number;
   children?: React.ReactNode;
   stepTitle?: string;
+  nextBtnProps?: ButtonProps;
+  nextBtn?: React.ReactNode;
 };
 
 type StepsProps = {
   children?: React.ReactNode;
+  step: string | number;
+  increase?: () => void;
+  decrease?: () => void;
 };
 
 const StepItem: React.FC<StepItemProps> = ({
   increase,
   decrease,
+  nextBtnProps,
   stepKey,
   totalStep,
   children,
   stepTitle,
+  nextBtn,
 }) => {
   return (
     <div className="step-body">
@@ -35,11 +42,14 @@ const StepItem: React.FC<StepItemProps> = ({
             <i className="icofont-thin-double-left"></i> Back
           </Button>
         )}
-        {stepKey < (totalStep || 0) - 1 && (
-          <Button variant="seeking-primary" onClick={increase}>
-            Next <i className="icofont-thin-double-right"></i>
-          </Button>
-        )}
+        {stepKey < (totalStep || 0) - 1 &&
+          (nextBtn ? (
+            nextBtn
+          ) : (
+            <Button {...nextBtnProps} variant="seeking-primary" onClick={increase}>
+              Next <i className="icofont-thin-double-right"></i>
+            </Button>
+          ))}
         {totalStep !== undefined && stepKey === totalStep - 1 && (
           <Button variant="seeking-primary">
             <i style={{ marginRight: 8 }} className="icofont-verification-check"></i>
@@ -51,19 +61,9 @@ const StepItem: React.FC<StepItemProps> = ({
   );
 };
 
-const Steps: React.FC<StepsProps> = ({ children }) => {
-  const [key, setKey] = useState<number>(0);
-
-  const increase = () => {
-    setKey(key + 1);
-  };
-
-  const decrease = () => {
-    setKey(key - 1);
-  };
-
+const Steps: React.FC<StepsProps> = ({ children, step, increase, decrease }) => {
   return (
-    <Tabs className="mb-3 job-seeking-steps" activeKey={key}>
+    <Tabs className="mb-3 job-seeking-steps" activeKey={step}>
       {children &&
         Array.isArray(children) &&
         children?.map((e, idx) => {
@@ -75,6 +75,7 @@ const Steps: React.FC<StepsProps> = ({ children }) => {
                 totalStep={children.length}
                 increase={increase}
                 decrease={decrease}
+                {...e.props}
               >
                 {e.props.children}
               </StepItem>

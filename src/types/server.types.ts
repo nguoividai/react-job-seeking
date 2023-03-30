@@ -1,7 +1,5 @@
 export type ResponseServerAPI<T = Object> = {
-  code?: number | string;
   data: T;
-  isSuccess?: boolean;
+  success?: boolean;
   message?: string;
-  totalTime?: number;
 };

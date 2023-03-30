@@ -13,7 +13,7 @@ const SalaryDesiredForm = () => {
         </p>
       </div>
       <div className="mt-3 mb-3">
-        <Col xs="6" md="3">
+        <Col xs="6" md="4">
           <InputGroup className="mb-3">
             <Form.Control type="number" placeholder="Enter number" />
             <InputGroup.Text id="basic-addon2">/ HOUR</InputGroup.Text>
